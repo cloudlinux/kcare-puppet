@@ -1,0 +1,12 @@
+#THIS FILE IS MANAGED BY PUPPET
+AUTO_UPDATE=<%= capitalize("${kernelcare::autoupdate}") %>
+<% unless $kernelcare::patch_server =~ Undef { -%>
+PATCH_SERVER=<%= $kernelcare::patch_server %>
+<% } -%>
+<% unless $kernelcare::registration_url =~ Undef { -%>
+REGISTRATION_URL=<%= $kernelcare::registration_url %>
+<% } -%>
+<% $settings = $kernelcare::config_hash -%>
+<% $settings.each |$key, $value| { -%>
+<%= $key -%>=<%= $value %>
+<% } -%>

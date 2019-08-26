@@ -1,0 +1,14 @@
+---
+# kernelcare::patch_server: 'http://192.168.1.85/'
+# kernelcare::registration_url: 'http://192.168.1.85/admin/api/kcare'
+# kernelcare::email_id: 'admin@mycompany.com'
+# kernelcare::installation_script_url: 'https://repo.cloudlinux.com/kernelcare/kernelcare_install.sh'
+# kernelcare::registration_key: 'H2XfGtJU4pPagDzM'
+# kernelcare::autoupdate: True
+# kernelcare::config_hash:
+#   PREFIX: '24h'
+# kernelcare::execute_patch: false
+# kernelcare::execute_unpatch: false
+# kernelcare::execute_check: true
+# kernelcare::execute_tag: true
+# kernelcare::servertag: 'test'
