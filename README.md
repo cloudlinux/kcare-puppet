@@ -26,7 +26,7 @@ This module manage the kernelcare configuration file (**/etc/sysconfig/kcare/kca
 
 This module requires following puppet modules from the forge:
 (Dependencies)
-1. **rehan-wget** (1.3.4)
+1. **rehan-wget** (>=1.3.4 < 2.0.0)
 2. **puppetlabs-stdlib** (>= 5.0.0 < 7.0.0)
 
 ### Beginning with kernelcare
