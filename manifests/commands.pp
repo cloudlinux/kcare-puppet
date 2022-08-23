@@ -31,7 +31,7 @@ class kernelcare::commands(
 
   if $servertag != undef {
     exec { 'tag server':
-      path      => ['/usr/bin/','/usr/sbin/'],
+      path      => ['/usr/bin', '/usr/sbin', '/bin', '/sbin'],
       command   => "kcarectl --tag ${servertag}",
       logoutput => true,
     }

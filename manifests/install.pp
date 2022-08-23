@@ -27,7 +27,7 @@ class kernelcare::install(
   }
 
   exec { 'execute installer':
-    path        => ['/usr/bin', '/usr/sbin', '/bin'],
+    path        => ['/usr/bin', '/usr/sbin', '/bin', '/sbin'],
     command     => "${installation_script_path}/kernelcare_install.sh",
     provider    => shell,
     creates     => '/etc/sysconfig/kcare/kcare.conf',
