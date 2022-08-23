@@ -10,7 +10,7 @@ class kernelcare::register(
 ) {
   if $registration_key != undef {
     exec { 'register server':
-      path      => ['/usr/bin','/usr/sbin'],
+      path        => ['/usr/bin', '/usr/sbin', '/bin', '/sbin'],
       command   => "kcarectl --register ${registration_key}",
       creates   => '/etc/sysconfig/kcare/systemid',
       logoutput => true,

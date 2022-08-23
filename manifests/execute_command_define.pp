@@ -12,7 +12,7 @@ define kernelcare::execute_command_define (
   $command,
 ) {
   exec { $title:
-      path      => ['/usr/bin/','/usr/sbin/'],
+      path        => ['/usr/bin', '/usr/sbin', '/bin', '/sbin'],
       command   => "kcarectl --${command}",
       logoutput => true,
     }
